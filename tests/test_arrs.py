@@ -1,11 +1,11 @@
 import unittest
-from utils import arrs
+from unittest_proj.utils import arrs
 
 
 class TestArrs(unittest.TestCase):
 
     def test_get(self):
-        self.assertEqual(arrs.get([1, 2, 3], 1, "test"), 3)
+        self.assertEqual(arrs.get([1, 2, 3], 1, "test"), 2)
         self.assertEqual(arrs.get([], 0, "test"), "test")
 
     def test_slice(self):
